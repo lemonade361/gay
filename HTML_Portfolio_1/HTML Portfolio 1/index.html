@@ -1,0 +1,64 @@
+<!-- We HAVE to make sure to set the DOCTYPE, otherwise the pge may not be rendered correctly. -->
+<!DOCTYPE html>
+<!-- 
+    Now we're going to open our html tag, we're also going to add the attribute called lang. 
+    This will allow us to tell the browser what languange this page is in. 
+-->
+<html lang="en">
+
+<!-- 
+    Now let's set up our header tag. I know it's called head, not header. 
+    Here we will set our page paramaters, such as our page title and calling our CSS file. 
+-->
+
+<head>
+    <!-- This is our page title, it will appear on the tab of our browser.-->
+    <title>My Awesome Portfolio</title>
+    <!-- This is the link tag. It's where we call our CSS file.-->
+    <link rel="stylesheet" href="style.css">
+    <!-- We're going to call a nice library named FontAwesome. They make Awesome icons for free use on the internet! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<!-- Alright, time to get into the meat and potatoes of the body! -->
+
+<body>
+    <!-- Our first div, known as a divider. -->
+    <div>
+        <!-- 
+            Ooo we've got an img tag, looks like the name of the file is profile.png. 
+            Wonder what happens if we replace the image and change the name with the src attribute. 
+        -->
+        <img class="profile-pic" src="skomorucha_nachos.png" height="100px">
+    </div>
+    <!-- Notice how this div has a class attribute with a value. Take a look at the css and see what thats doing! -->
+    <div class="page-title">
+        <h1>jacob skomorucha</h1>
+        <h3>a person</h3>
+    </div>
+    <div class="about-me">
+        <h2>About Me</h2>
+        <!-- It's a page about you! Get rid of this filler text and tell us something about you! -->
+        <p>
+            hi, i like plants and boats ig
+        </p>
+    </div>
+    <div>
+        <h2>Links</h2>
+        <!-- 
+            Whoa! A button, it's green too! Checkout the href attribute, that is where we're going to navigate the user when they click the button. 
+            The target attribute tells the DOM how to handle the href, in this case the value ius an underscore. That will open the link in a new tab. 
+        -->
+        <a href="https://google.com" target="_" class="button">My Link</a>
+    </div>
+
+</body>
+
+<footer>
+    <!-- Uhh what's HR doing here? It actually stands for Horizontal Rule. It's that line you see in the footer. -->
+    <hr>
+    <!-- Aww we've got a heart in there! This is the result of using Font Awesome. You can find a bunch of cool icons here https://fontawesome.com/icons -->
+    <p>Made with <i class="fa-solid fa-heart text-red"></i> in Wilmington, DE</p>
+</footer>
+
+</html>
